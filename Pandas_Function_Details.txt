@@ -1,0 +1,19 @@
+pd.read_csv()	:	it read out the CSV files
+dataname.info()	:	it gives the data type, number of coloum and how many columns are null.
+dataname.describe():	it gives more details	
+bike_ride_data["trip_id"] :   i can aslo check details of the single coloum 
+bike_ride_data[["year",'month']] : we can give more than one coloum value get
+bike_ride_data.head() :  it gives the frist five rows of each coloum.
+bike_ride_data.tail() :  it gives the last five rows
+.shape :	it gives the details of the number of columns and rows
+.dropna 	:	it drops the null space
+fillna : it fills the null spaces with one you assign
+data transformation :
+.shape
+.Describe
+.unique()
+.value_counts()
+data['specific name of the row'] == 'unique value to see the details'  : it will return true where the unique value is present.
+data[data['specific name of the row'] == 'unique value to see the details'] : this is return the sepecific value.
+data[["trip_id", "month", "day"]]  :if i need specific columns
+data[(data["gender" ] == 'Male') & (data['year'] == 2017)]  : Two conditions
