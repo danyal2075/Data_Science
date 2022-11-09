@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/281047f465.js" crossorigin="anonymous"></script>
+    <title>Foldit</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="e+KWZYRHZeYSDr8i0IDqn4AYBj69RqKB4G22WxL+FKy055WTm+fFhoEwe3Wi+B0hNXw5FSuP/6B0Pq8yrIhA+A==" />
+    
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-aa9044a6b0c5a2b8bf8f305c779732541fb64e5fa476f7dfb31ac8cc761d4317.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" media="all" href="/assets/application-e19fbbc9fc765c1c7069883d07766eed196f1de825dd848bfcb6c3d651deb0d7.css" />
+    <script src="/assets/application-497fc3d14f65954c20c52de8b8557fff6d4be106dc7353bfc8c48a46b7ccf086.js"></script>
+          <link rel="stylesheet" media="screen" href="/assets/scores-e0abc19b0cd729edeb890974ba2f85188468523198c2f0dcd41c15dea0cbbe60.css" />
+    <link rel="stylesheet" media="screen" href="/assets/leaderboards/show-a70dc0dc5cf7a2980658ec2a8aa25db583c2b3c60387ffa0ff824e18e97f8ff0.css" />
+
+    <script src="/assets/molstar-web-component-ad84cbc3ef5a9daf076fbc8f0894c2862d7817cf8cafeb7b14db1dd770bfb4f3.js" async="async"></script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://stats.ipd.uw.edu/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '7']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">
+          <img class="navbar-icon" alt="Foldit logo" src="/assets/logo_simple-4014b6b9f55d5160bf8309d8167ec6e354411adb98014a1a3363ae37f0f371c3.svg" />
+</a>        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="gameDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu" aria-labelledby="gameDropdownLink">
+                <a class="dropdown-item" href="/puzzles">Puzzles</a>
+                <a class="dropdown-item" href="/leaderboards">Leaderboards</a>
+                <a class="dropdown-item" href="/recipes">Recipes</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="communityDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Community
+              </a>
+              <div class="dropdown-menu" aria-labelledby="communityDropdownLink">
+                <a class="dropdown-item" href="/forum">Forums</a>
+                <a class="dropdown-item" href="/groups">Groups</a>
+                <a class="dropdown-item" href="/users">Players</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
+                <a class="dropdown-item" href="/about_foldit">About Foldit</a>
+                <a class="dropdown-item" href="/science">Science</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/community_rules">Community Rules</a>
+                <a class="dropdown-item" href="/credits">Credits</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/play">Download</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              <div class="dropdown">
+    <button class="dropdown-toggle btn btn-outline-light mb-2 mb-lg-0 mr-lg-2" id="loginDropdownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Log in
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdownBtn">
+        <form class="px-4 py-3 d-flex flex-column" action="/session" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5IS25BlAlFu9aznx3LZiRDIbiZpIyD5T9DAWGNUAysayKjTnkyWke2m8Ud11qYUuZzh7GIEt+Zwn15CzDNNYSg==" />
+        <div class="form-group">
+            <label class="mb-0" for="session_email">
+                Username <small class='text-muted text-right'>(case sensitive)</small>
+</label>            <input class="form-control" type="text" name="session[email]" id="session_email" />
+        </div>
+
+        <div class="form-group">
+            <label class="mb-0" for="session_password">
+                Password <small class='text-muted text-right'>(case sensitive)</small>
+</label>            <input class="form-control" type="password" name="session[password]" id="session_password" />
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <div>
+                <a class="small d-block" href="/passwords/new">Forgot password?</a>
+                <a class="small d-block" href="/forgot_username">Forgot username?</a>
+            </div>
+            <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
+        </div>
+</form>    </div>
+</div>
+              <li class="nav-item d-flex align-items-center">
+                <a class="btn btn-primary" href="/sign_up">Sign up</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-header"><!-- spacing element that prevents nav from obscuring content --></div>
+
+    <main class="container my-3">
+      <div id="flash">
+      </div>
+
+      
+<header>
+    <ul class="thredded--navigation-breadcrumbs">
+        <li><a href="/leaderboards">Leaderboards</a></li>
+        <li><a href="/leaderboards/Overall">Overall</a></li>
+    </ul>
+    <div class="d-flex flex-column flex-sm-row">
+        <h1 class="d-inline">Overall puzzles</h1>
+        <div class="dropdown d-inline ml-sm-auto mr-sm-0 d-block mb-2 mb-sm-0 mx-auto">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="category-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Category: Overall
+            </button>
+            <div class="dropdown-menu" aria-labelledby="category-menu">
+                    <a class="dropdown-item" href="/leaderboards/CASP10?score_type=evolver">CASP10</a>
+                    <a class="dropdown-item" href="/leaderboards/Kinect?score_type=evolver">Kinect</a>
+                    <a class="dropdown-item" href="/leaderboards/CASP%20ROLL?score_type=evolver">CASP ROLL</a>
+                    <a class="dropdown-item" href="/leaderboards/Hand-Folding?score_type=evolver">Hand-Folding</a>
+                    <a class="dropdown-item" href="/leaderboards/CASP11?score_type=evolver">CASP11</a>
+                    <a class="dropdown-item" href="/leaderboards/Predicted%20Contacts?score_type=evolver">Predicted Contacts</a>
+                    <a class="dropdown-item" href="/leaderboards/Pilot?score_type=evolver">Pilot</a>
+                    <a class="dropdown-item" href="/leaderboards/Overall?score_type=evolver">Overall</a>
+                    <a class="dropdown-item" href="/leaderboards/Beginner?score_type=evolver">Beginner</a>
+                    <a class="dropdown-item" href="/leaderboards/Novice?score_type=evolver">Novice</a>
+                    <a class="dropdown-item" href="/leaderboards/Intermediate?score_type=evolver">Intermediate</a>
+                    <a class="dropdown-item" href="/leaderboards/Advanced?score_type=evolver">Advanced</a>
+                    <a class="dropdown-item" href="/leaderboards/Design?score_type=evolver">Design</a>
+                    <a class="dropdown-item" href="/leaderboards/Small%20Molecule%20Design?score_type=evolver">Small Molecule Design</a>
+                    <a class="dropdown-item" href="/leaderboards/Prediction?score_type=evolver">Prediction</a>
+                    <a class="dropdown-item" href="/leaderboards/Symmetry?score_type=evolver">Symmetry</a>
+                    <a class="dropdown-item" href="/leaderboards/Electron%20Density?score_type=evolver">Electron Density</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="d-flex flex-column">
+        <div class="mx-auto mb-3">
+            <nav class="btn-group" role="group" aria-label="Jump to section">
+                <a class="btn btn-outline-primary" href="#leaderboard">
+                    <i class="fas fa-trophy align-baseline"></i> Leaderboard
+</a>
+                <a class="btn btn-outline-primary" href="#recent-puzzles">
+                    <i class="fas fa-puzzle-piece align-baseline"></i> Recent puzzles
+</a>            </nav>
+        </div>
+    </nav>
+
+    <p>This category includes every puzzle except the Beginner puzzles. Doing well in this category means you&#39;re well versed in all forms of folding, even if you&#39;re not the best in one particular category.</p>
+</header>
+
+<section>
+    <hr>
+</section>
+
+<section>
+    <a id="leaderboard"></a>
+    <div class="d-flex flex-column flex-sm-row">
+        <h2 class="d-inline mb-4">Leaderboard: top overall evolvers</h2>
+        <div class="d-inline ml-sm-auto mb-3 mx-auto mr-sm-0">
+            <nav class="btn-group" role="group" aria-label="Switch score type">
+                <a class="btn btn-outline-primary" href="/leaderboards/Overall?leaderboard_page=1&amp;score_type=soloist#leaderboard">Soloist</a>
+                <a class="btn btn-outline-primary" href="/leaderboards/Overall?leaderboard_page=1&amp;score_type=group#leaderboard">Group</a>
+                <a class="btn btn-primary" href="/leaderboards/Overall?leaderboard_page=1&amp;score_type=evolver#leaderboard">Evolver</a>
+            </nav>
+        </div>
+    </div>
+    <div class="leaderboard">
+        <p class="text-center lead">No scores of this type to display!</p>
+</div>
+
+      <nav class="pagination thredded--pagination">
+    <span class="first">
+  <a href="/leaderboards/Overall?score_type=evolver">&laquo; First</a>
+</span>
+
+    <span class="prev">
+  <a rel="prev" href="/leaderboards/Overall?leaderboard_page=25&amp;score_type=evolver">&lsaquo; Prev</a>
+</span>
+
+        <span class="page gap">&hellip;</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=22&amp;score_type=evolver">22</a>
+</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=23&amp;score_type=evolver">23</a>
+</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=24&amp;score_type=evolver">24</a>
+</span>
+
+        <span class="page">
+  <a rel="prev" href="/leaderboards/Overall?leaderboard_page=25&amp;score_type=evolver">25</a>
+</span>
+
+        <span class="page current">
+  26
+</span>
+
+        <span class="page">
+  <a rel="next" href="/leaderboards/Overall?leaderboard_page=27&amp;score_type=evolver">27</a>
+</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=28&amp;score_type=evolver">28</a>
+</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=29&amp;score_type=evolver">29</a>
+</span>
+
+        <span class="page">
+  <a href="/leaderboards/Overall?leaderboard_page=30&amp;score_type=evolver">30</a>
+</span>
+
+        <span class="page gap">&hellip;</span>
+
+    <span class="next">
+  <a rel="next" href="/leaderboards/Overall?leaderboard_page=27&amp;score_type=evolver">Next &rsaquo;</a>
+</span>
+
+    <span class="last">
+  <a href="/leaderboards/Overall?leaderboard_page=73&amp;score_type=evolver">Last &raquo;</a>
+</span>
+
+  </nav>
+
+</section>
+
+<section>
+    <a id="recent-puzzles"></a>
+    <h2>Recent overall puzzles</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Puzzle</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><a href="/puzzles/2013481">Design of the Month: October 2022</a></td>
+                        <td>
+                            <span class="text-primary font-weight-bold">Open</span>
+                                for the next
+                                5 days
+                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/puzzles/2013497">2216: SARS-CoV-2 helicase CACHE Challenge: Round 5</a></td>
+                        <td>
+                            <span class="text-primary font-weight-bold">Open</span>
+                                for the next
+                                2 days
+                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/puzzles/2013495">2215: Revisiting Puzzle 52: Bacteria Energy</a></td>
+                        <td>
+                            <span class="text-primary font-weight-bold">Open</span>
+                                for the next
+                                1 day
+                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/puzzles/2013494">2214: Monkeypox H3 Binder Design: Round 6</a></td>
+                        <td>
+                            <span class="text-primary font-weight-bold">Open</span>
+                                for the next
+                                about 7 hours
+                                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/puzzles/2013492">2213: SARS-CoV-2 helicase CACHE Challenge: Round 4</a></td>
+                        <td>
+                            <span class="text-danger font-weight-bold">Closed</span>
+                                since
+                                5 days
+                                ago
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="page-footer font-small blue pt-4 mt-auto">
+      <div class="container">
+        <div class="text-center">
+          <a class="social-link" href="https://www.facebook.com/folditgame/" aria-label="Foldit Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+          <a class="social-link" href="https://www.youtube.com/channel/UCGjfDFjL-7rvhRRl2keqhcA" aria-label="Foldit YouTube"><i class="fab fa-youtube fa-3x"></i></a>
+          <a class="social-link" href="https://twitter.com/Foldit" aria-label="Foldit Twitter"><i class="fab fa-twitter-square fa-3x"></i></a>
+          <a class="social-link" href="https://discord.gg/Ffgx2KJ" aria-label="Foldit Discord"><i class="fab fa-discord fa-3x"></i></a>
+        </div>
+        <hr/>
+        <div class="text-center text-light">
+          <a class="text-light" href="/legal">Terms of Service</a> &middot;
+          <a class="text-light" href="/data_policy">Data Policy</a> &middot;
+          <a class="text-light" href="/science">Science</a> &middot;
+          <a class="text-light" href="/faq">FAQ</a> &middot;
+          <a class="text-light" href="/community_rules">Community Rules</a> &middot;
+          <a class="text-light" href="/credits">Credits</a> &middot;
+          <a class="text-light" href="/releases">Release Notes</a>
+        </div>
+        <hr/>
+        <div class="text-light footer-text">
+          <p>
+            Developed by: Center for Game Science (University of Washington), Institute for Protein Design (University of Washington), Cooper Lab (Northeastern University), Khatib Lab (University of Massachusetts, Dartmouth), Siegel Lab (University of California, Davis), Meiler Lab (Vanderbilt University), Horowitz Lab (University of Denver) 
+          </p>
+          <p>
+            Supported by:
+            <a class="text-light" class="text-light" href="http://www.darpa.mil/">DARPA</a>,
+            <a class="text-light" href="http://www.nsf.gov/">NSF</a>,
+            <a class="text-light" href="http://www.nih.gov/">NIH</a>,
+            <a class="text-light" href="http://www.hhmi.org/">HHMI</a>,
+            <a class="text-light" href="http://aws.amazon.com/">Amazon</a>,
+            <a class="text-light" href="http://www.microsoft.com/">Microsoft</a>,
+            <a class="text-light" href="http://www.adobe.com/">Adobe</a>,
+            <a class="text-light" href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim</a>,
+            <a class="text-light" href="http://rosettacommons.org/">RosettaCommons</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
